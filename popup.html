@@ -1,0 +1,31 @@
+<html>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script> -->
+    <script src="js-bundles/Chart.min.js"></script>
+    <body>
+
+        <div id="metricsContainer" style="font-size: large;">
+            <div style="margin-bottom: 20px;">
+                <span>Connections: </span>
+                <span id="connections">updating...</span>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <span>Total Messages sent: </span>
+                <span id="messagesSent">updating...</span>
+            </div>
+            <div style="margin-bottom: 20px;">
+                <span>Following count: </span>
+                <span id="following" >updating...</span>
+            </div>
+        </div>
+        
+        <span id="loginWarning" style="color:red; font-size: large;"></span>
+
+        <div id="chartsContainer">
+            <canvas id="connectionsChart" style="width:100%;min-width:600px"></canvas>
+            <canvas id="messagesSentChart" style="width:100%;min-width:600px"></canvas>
+            <canvas id="followingChart" style="width:100%;min-width:600px"></canvas>
+        </div>
+
+        <script src="popup.js"></script>
+    </body>
+</html>

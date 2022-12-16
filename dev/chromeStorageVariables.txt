@@ -1,0 +1,18 @@
+// Related to current loggedIn user
+isLoggedIn: string ("true")
+csrfToken: string
+profileId: string
+messagesSent: int
+connectionsCount: int
+followingCount: int
+
+// Daily Record DB
+<profileId>@<dateString>: JSON.stringify(obj)  obj = {connectionsCount, messagesSent, followingCount}
+<profileId>@<dateString>
+<profileId>@<dateString>
+<profileId>@<dateString>
+...
+...
+
+// Related to app execution 
+lastUpdated: int (time in ms)
